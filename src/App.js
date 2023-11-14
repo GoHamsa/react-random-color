@@ -1,10 +1,8 @@
 import randomColor from 'randomcolor';
-//var randomHex = require('random-hex');
 import { useState } from 'react';
 
 export default function App() {
   const [hexColor, setColor] = useState(randomColor);
-  //const [message, setMessage] = useState('initial Color');
   const ranCol = randomColor();
 
   return (
@@ -16,7 +14,6 @@ export default function App() {
       <div style={{ backgroundColor: ranCol }}>
         <button
           onClick={() => {
-            //setMessage('Generated Color: ');
             setColor(ranCol);
           }}
         >
